@@ -15,7 +15,10 @@
     "cursor",
     "copilot"
   ],
-  "author": "Webisoft Development Labs <contact@webisoft.com>",
+  "author": {
+    "name": "Utkarsh Varma",
+    "url": "https://github.com/UvRoxx"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
