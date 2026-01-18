@@ -25,3 +25,7 @@ npm-debug.log*
 # Environment
 .env
 .env.local
+
+# Blog/Draft docs (not for public repo)
+BLOG-POST.md
+drafts/

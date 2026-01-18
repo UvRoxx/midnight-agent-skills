@@ -1,4 +1,4 @@
-# Night Skills
+# Midnight Agent Skills
 
 > **AI Agent Skills for Building Privacy-Preserving dApps on Midnight Network**
 
@@ -8,24 +8,34 @@ Skills follow the [Agent Skills](https://agentskills.io/) format for seamless in
 
 ---
 
-## Quick Install (One-Liners)
+## Quick Install
 
-**Claude Code / Cursor / Any AI Agent:**
+**npx (Recommended):**
 ```bash
-git clone https://github.com/UvRoxx/midnight-agent-skills.git && cd midnight-agent-skills
+npx midnight-agent-skills init
 ```
 
-**Add to existing project:**
+**Add specific skill:**
+```bash
+npx midnight-agent-skills add midnight-compact-guide
+```
+
+**List all skills:**
+```bash
+npx midnight-agent-skills list
+```
+
+**Alternative - Git clone:**
+```bash
+git clone https://github.com/UvRoxx/midnight-agent-skills.git
+```
+
+**Add as submodule:**
 ```bash
 git submodule add https://github.com/UvRoxx/midnight-agent-skills.git
 ```
 
-**Direct skill reference (Claude Code):**
-```bash
-curl -sL https://raw.githubusercontent.com/UvRoxx/midnight-agent-skills/main/skills/midnight-compact-guide/SKILL.md
-```
-
-Once cloned, your AI agent will automatically use the skills when you ask things like:
+Once installed, your AI agent will automatically use the skills when you ask:
 - *"Write a Midnight contract for voting"*
 - *"Set up local Midnight infrastructure"*
 - *"Deploy my contract to testnet"*
