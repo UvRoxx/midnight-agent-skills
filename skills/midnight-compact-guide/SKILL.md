@@ -4,21 +4,21 @@ description: Comprehensive guide to writing Compact smart contracts for Midnight
 license: MIT
 metadata:
   author: webisoft
-  version: "2.0.0"
+  version: "2.1.0"
   midnight-version: "0.27.0"
-  compact-version: "0.16 - 0.18"
+  compact-version: "0.19+"
 ---
 
-# Midnight Compact Language Reference (v0.16 - v0.18)
+# Midnight Compact Language Reference (v0.19+)
 
-> **CRITICAL**: This reference is derived from **actual compiling contracts** in the Midnight ecosystem. Always verify syntax against this reference before generating contracts.
+> **CRITICAL**: This reference is derived from **actual compiling contracts** in the Midnight ecosystem (MeshJS starter template). Always verify syntax against this reference before generating contracts.
 
 ## Quick Start Template
 
 Use this as a starting point - it compiles successfully:
 
 ```compact
-pragma language_version >= 0.16 && <= 0.18;
+pragma language_version >= 0.19;
 
 import CompactStandardLibrary;
 
@@ -39,15 +39,15 @@ export circuit increment(): [] {
 
 ## 1. Pragma (Version Declaration)
 
-**CORRECT** - use bounded range without patch version:
+**CORRECT** - simple minimum version:
 ```compact
-pragma language_version >= 0.16 && <= 0.18;
+pragma language_version >= 0.19;
 ```
 
-**WRONG** - these will cause parse errors:
+**WRONG** - these will cause issues:
 ```compact
-pragma language_version >= 0.14.0;           // ❌ patch version not needed
-pragma language_version >= 0.16.0 < 0.19.0;  // ❌ wrong operator format
+pragma language_version >= 0.14.0;           // ❌ outdated version
+pragma language_version >= 0.16 && <= 0.18;  // ❌ outdated, use >= 0.19
 ```
 
 ---
@@ -357,7 +357,7 @@ export circuit authenticated_action(): [] {
 
 ### Commit-Reveal Pattern
 ```compact
-pragma language_version >= 0.16 && <= 0.18;
+pragma language_version >= 0.19;
 
 import CompactStandardLibrary;
 
@@ -428,7 +428,7 @@ export circuit check_broken(guess: Field): Boolean {
 |---------|---------|
 | `ledger { field: Type; }` | `export ledger field: Type;` |
 | `circuit fn(): Void` | `circuit fn(): []` |
-| `pragma >= 0.16.0` | `pragma >= 0.16 && <= 0.18` |
+| `pragma >= 0.16.0` | `pragma language_version >= 0.19;` |
 | `enum State { ... }` | `export enum State { ... }` |
 | `if (witness_val == x)` | `if (disclose(witness_val == x))` |
 | `Cell<Field>` | `Field` (Cell is deprecated) |

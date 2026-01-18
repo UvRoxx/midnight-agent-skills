@@ -8,6 +8,30 @@ Skills follow the [Agent Skills](https://agentskills.io/) format for seamless in
 
 ---
 
+## Quick Install (One-Liners)
+
+**Claude Code / Cursor / Any AI Agent:**
+```bash
+git clone https://github.com/UvRoxx/midnight-agent-skills.git && cd midnight-agent-skills
+```
+
+**Add to existing project:**
+```bash
+git submodule add https://github.com/UvRoxx/midnight-agent-skills.git
+```
+
+**Direct skill reference (Claude Code):**
+```bash
+curl -sL https://raw.githubusercontent.com/UvRoxx/midnight-agent-skills/main/skills/midnight-compact-guide/SKILL.md
+```
+
+Once cloned, your AI agent will automatically use the skills when you ask things like:
+- *"Write a Midnight contract for voting"*
+- *"Set up local Midnight infrastructure"*
+- *"Deploy my contract to testnet"*
+
+---
+
 ## About
 
 **Night Skills** is an open-source project by [Webisoft Development Labs](https://webisoft.com), created to help developers build privacy-preserving applications on [Midnight Network](https://midnight.network) using AI-powered development tools.
@@ -33,7 +57,7 @@ Skills follow the [Agent Skills](https://agentskills.io/) format for seamless in
 
 | Skill | Description | Triggers |
 |-------|-------------|----------|
-| **midnight-compact-guide** | Complete Compact language reference (v0.16-0.18) | "write contract", "Compact syntax", "ZK proof" |
+| **midnight-compact-guide** | Complete Compact language reference (v0.19+) | "write contract", "Compact syntax", "ZK proof" |
 | **midnight-sdk-guide** | TypeScript SDK & wallet integration | "SDK", "wallet integration", "connect dApp" |
 | **midnight-infra-setup** | Local infrastructure setup | "setup node", "start indexer", "proof server" |
 | **midnight-deploy** | Contract deployment | "deploy contract", "deploy to testnet" |
@@ -45,7 +69,7 @@ Skills follow the [Agent Skills](https://agentskills.io/) format for seamless in
 
 ### midnight-compact-guide
 
-Comprehensive guide to writing Compact smart contracts for Midnight (v0.16 - v0.18).
+Comprehensive guide to writing Compact smart contracts for Midnight (v0.19+).
 
 **Features:**
 - Complete syntax reference (pragma, imports, circuits)
@@ -350,7 +374,7 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for deta
 - Test scripts on macOS and Linux
 - Keep SKILL.md under 500 lines
 - Reference official Midnight repos
-- Include correct Compact syntax (v0.16-0.18)
+- Include correct Compact syntax (v0.19+)
 
 ### Code of Conduct
 

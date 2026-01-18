@@ -20,7 +20,7 @@ Midnight is a privacy-first blockchain platform using zero-knowledge proofs:
 ## Available Skills
 
 ### midnight-compact-guide
-Complete Compact language reference (v0.16-0.18) for writing privacy-preserving smart contracts.
+Complete Compact language reference (v0.19+) for writing privacy-preserving smart contracts.
 
 **Triggers:** "write contract", "Compact syntax", "ZK proof", "ledger state", "circuit function"
 
@@ -31,7 +31,7 @@ Complete Compact language reference (v0.16-0.18) for writing privacy-preserving 
 - `openzeppelin-patterns.md` - Security patterns (Ownable, Pausable, AccessControl)
 
 **Critical Syntax Notes:**
-- Pragma: `pragma language_version >= 0.16 && <= 0.18;`
+- Pragma: `pragma language_version >= 0.19;`
 - Ledger: Individual declarations, NOT block syntax
 - Return type: `[]` (empty tuple), NOT `Void`
 - Witness: Declaration only, NO body in Compact
@@ -67,12 +67,12 @@ Run and debug Midnight contract tests.
 
 **Triggers:** "run tests", "test contract", "debug test failure"
 
-## Common Compact Syntax (v0.16-0.18)
+## Common Compact Syntax (v0.19+)
 
 ### Quick Reference
 
 ```compact
-pragma language_version >= 0.16 && <= 0.18;
+pragma language_version >= 0.19;
 
 import CompactStandardLibrary;
 
