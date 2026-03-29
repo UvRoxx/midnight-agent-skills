@@ -21,7 +21,7 @@ The 1AM Wallet provides a DApp Connector API at `window.midnight['1AM']` for:
 npm install @midnight-ntwrk/midnight-js-contracts @midnight-ntwrk/midnight-js-types @midnight-ntwrk/compact-runtime @midnight-ntwrk/ledger-v8
 ```
 
-Install the [1AM Wallet](https://1am.xyz/install-beta) browser extension.
+Install the [1AM Wallet](https://chromewebstore.google.com/detail/1am/bphnkdkcnfhompoegfpgnkidcjfbojjp) from the Chrome Web Store. For beta builds, see [1am.xyz/install-beta](https://1am.xyz/install-beta).
 
 ## Rules
 

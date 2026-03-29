@@ -21,6 +21,6 @@ if (window.midnight?.['1AM']) {
 }
 ```
 
-Install: [1am.xyz/install-beta](https://1am.xyz/install-beta)
+Install: [Chrome Web Store](https://chromewebstore.google.com/detail/1am/bphnkdkcnfhompoegfpgnkidcjfbojjp) | Beta builds: [1am.xyz/install-beta](https://1am.xyz/install-beta)
 
 Reference implementation: [github.com/webisoftSoftware/zk-mint](https://github.com/webisoftSoftware/zk-mint)

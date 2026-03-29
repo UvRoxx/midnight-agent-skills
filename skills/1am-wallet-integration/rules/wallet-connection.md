@@ -46,4 +46,6 @@ async function connectToNetwork(targetNetwork: string) {
 
 ## Install Link
 
-If wallet not detected, direct users to: `https://1am.xyz/install-beta`
+If wallet not detected, direct users to: `https://chromewebstore.google.com/detail/1am/bphnkdkcnfhompoegfpgnkidcjfbojjp`
+
+For beta/pre-release builds: `https://1am.xyz/install-beta`
