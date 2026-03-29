@@ -1,5 +1,7 @@
 # Midnight Agent Skills
 
+> This project extends the Midnight Network with additional developer tooling.
+
 > **AI Agent Skills for Building Privacy-Preserving dApps on Midnight Network**
 
 A comprehensive collection of skills that extend AI coding agents (Claude Code, Cursor, Copilot, etc.) to build, deploy, test, and interact with Midnight Network applications.
